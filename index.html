@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Pribadi</title>
+    <meta name="theme-color" content="#0d0072"/>
+    <link rel="manifest" href="assets/js/web.webmanifest">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Night Mode Toggle Button -->
+    <div class="toggle-container">
+        <button id="toggleNightMode">Night Mode</button>
+    </div>
+
+    <div class="profile">
+        <h1>Biodata Pribadi</h1>
+        <img src="assets/img/profile.jpg" alt="Foto Profil" width="150" height="150">
+        <h2>Nama: ANDRIAN SAPUTRA</h2>
+        <h2>Nim: 2110031802018</h2>
+        <p> 
+            <strong>Tempat, Tanggal Lahir:</strong> Bengkalis, 24-oktober-2002 <br>
+            <strong>Jenis Kelamin:</strong> Laki - laki <br>
+            <strong>Alamat:</strong> Jalan Purwodadi Gg.Revolusi, sidomulyo barat,<br> Dekat masjid Bundar Al Murtaja <br>
+            <strong>No. Telepon:</strong> 085263453604 <br>
+            <strong>Email:</strong> andriansaputra.bks10@gmail.com <br>
+            <strong>Pendidikan Terakhir:</strong> SMA <br>
+            <strong>Pendidikan saat ini:</strong> S1 <br>
+        </p>
+    </div>
+
+
+    <div class="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah mahasiswa semester 7 universitas sains dan teknologi indonesia (USTI) Prodi TEKNIK INFORMATIKA dan saya adalah anak pertama dari dua bersaudara</p>
+    </div>
+
+    <div class="social">
+        <h2>Sosial Media</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/andriansaputraa__?igsh=bm85enlhcHcyOXI1&utm_source=qr">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@naykobaikya?_t=8qeCOsp3vBX&_r=1">TikTok</a></li>
+        </ul>
+    </div>
+
+    <script src="assets/js/register.js"></script>
+    <script>
+        // JavaScript to toggle between night mode and day mode
+        const toggleButton = document.getElementById('toggleNightMode');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', function() {
+            body.classList.toggle('night-mode');
+            if(body.classList.contains('night-mode')) {
+                toggleButton.textContent = "Day Mode";
+            } else {
+                toggleButton.textContent = "Night Mode";
+            }
+        });
+    </script>
+</body>
+</html>
